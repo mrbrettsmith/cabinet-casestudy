@@ -39,6 +39,9 @@ h1,h3{
     text-transform: uppercase;
 }
 
+a{
+    cursor: pointer;
+}
 a:link {
     text-decoration: none;
     color:initial;
@@ -62,6 +65,15 @@ img{
       max-width: 100%;
       display: block;
   }
+
+/** Image **/
+nav{
+    font-family: var(--font-sans-serif);
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding-bottom: .58em;
+    display: block;
+}
 
 /** componant **/
 .component img{
