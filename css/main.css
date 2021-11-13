@@ -16,9 +16,46 @@ html {
     box-sizing: inherit;
   }
   
-  body{
-    font-family: var(--font-serif);
-    font-size: 1.25em;
-    line-height: 1.6;
+/** typography **/
 
+h1,h2{
+    font-family: var(--font-serif);
+    font-weight: 575;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    line-height: 2.2rem;
+    margin: 0;
+}
+
+h3{
+    font-family: var(--font-sans-serif);
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+h1,h3{
+    text-transform: uppercase;
+}
+
+body{
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+img{
+      max-width: 100%;
+      display: block;
+  }
+
+/** componant **/
+.component img{
+      max-width: initial;
+  }
+
+.component__img{
+      overflow-x: auto;
+      border: var(--orange) solid 1px;
   }
