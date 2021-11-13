@@ -23,7 +23,7 @@ h1,h2{
     font-weight: 575;
     font-size: 1.3rem;
     letter-spacing: 1px;
-    line-height: 2.2rem;
+    line-height: 2em;
     margin: 0;
 }
 
@@ -39,12 +39,25 @@ h1,h3{
     text-transform: uppercase;
 }
 
+a:link {
+    text-decoration: none;
+    color:initial;
+}
+a:visited {
+    color:var(--black);
+}
+a:hover {
+    color:var(--orange);
+}
+
 body{
     font-family: var(--font-serif);
     font-size: 1.25rem;
-    line-height: 1.6;
+    line-height: 2rem;
+    padding-bottom: .58em;
   }
 
+/** Image **/
 img{
       max-width: 100%;
       display: block;
