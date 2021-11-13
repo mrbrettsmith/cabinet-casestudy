@@ -1,3 +1,14 @@
+
+:root{
+    --font-sans-serif: arimo, sans-serif;
+    --font-serif: palatino, serif;
+    --white: #ffffff;
+    --grey: #d1d1d1;
+    --yellow: #fff713;
+    --orange: #f26d21;
+    --black: #000000;
+}
+
 html {
     box-sizing: border-box;
   }
@@ -8,6 +19,5 @@ html {
 
 
   body{
-    font-family: palatino, serif;
-    /* font-family: arimo, sans-serif; */
+    font-family: var(--font-sans-serif)
   }
