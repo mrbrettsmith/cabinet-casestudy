@@ -68,13 +68,24 @@ img{
 
 /** Image **/
 nav{
+    display: flex;
     font-family: var(--font-sans-serif);
     font-size: 1.25rem;
     line-height: 2rem;
     padding-bottom: .58em;
-    display: block;
+    border: red solid 2px;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+    border: red solid 2px;
 }
 
+li {
+    display: inline;
+    border: red solid 2px;
+    }
+}    
 /** componant **/
 .component img{
       max-width: initial;
