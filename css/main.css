@@ -58,6 +58,7 @@ body{
     font-size: 1.25rem;
     line-height: 2rem;
     padding-bottom: .58em;
+    background-color: var(--grey);
   }
 
 /** Image **/
@@ -66,26 +67,56 @@ img{
       display: block;
   }
 
-/** Image **/
+/** Header **/
 nav{
-    display: flex;
     font-family: var(--font-sans-serif);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     padding-bottom: .58em;
-    border: red solid 2px;
-}
-ul {
-    list-style-type: none;
-    text-align: center;
-    border: red solid 2px;
+    border-bottom: var(--white) solid 2px;
+    letter-spacing: 1px;
 }
 
-li {
-    display: inline;
-    border: red solid 2px;
-    }
-}    
+.wrapper {
+display: flex;
+justify-content: space-between;
+}
+.wrapper a{
+    color: var(--white);
+}
+nav ul{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/** Header Internal**/
+.internal li{
+    margin-right: 14px;
+}
+.internal li:last-of-type {
+    margin:0;
+}
+
+/** Header link**/
+.link a{
+    color: var(--black);
+}
+.link li{
+    margin-right: 14px;
+}
+.link li:last-of-type {
+    margin:0;
+}
+/** Header login **/
+.login li{
+    margin-left: 14px;
+}
+.login li:first-of-type {
+    margin:0;
+
+
 /** componant **/
 .component img{
       max-width: initial;
@@ -95,3 +126,5 @@ li {
       overflow-x: auto;
       border: var(--orange) solid 1px;
   }
+
+  
