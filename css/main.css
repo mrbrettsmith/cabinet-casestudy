@@ -67,6 +67,12 @@ img {
       display: block;
   }
 
+.transparent  {
+    scale: 50%;
+    margin: 0;
+    padding: 0;
+}
+
 /** Header **/
 nav{ 
     font-family: var(--font-sans-serif);
@@ -84,6 +90,11 @@ justify-content: space-between;
 .wrapper a{
     color: var(--white);
 }
+
+.wrapper a:hover{
+    color: var(--orange);
+}
+
 nav ul{ 
     list-style-type: none;
     margin: 0;
@@ -119,33 +130,27 @@ nav ul{
 /** Footer **/
 .foot { 
     font-family: var(--font-sans-serif);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     line-height: 2rem;
-    
+    margin: 0 3rem;
     border-top: var(--white) solid 2px;
     letter-spacing: 1px;
-}
-.foot a{
-    color: var(--black);
 }
 
 .foot ul { 
     list-style-type: none;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-    
 }
 
 .foot li{ 
-    padding: 0 14px;
-    margin-right: 14px;
+    padding: 0 16px;
+    
     border-right: var(--white) solid 2px;
 }
 
 .foot li:last-of-type {
-    margin:0;
+    border-right: none;
 }
 /** componant **/
 
@@ -155,7 +160,15 @@ nav ul{
 
 .component__img{
       overflow-x: auto;
-      border: var(--orange) solid 1px;
+      border: var(--yellow) solid 1px;
   }
 
-  
+  /** Card Mock-up **/
+  .mock-card {
+    display: block;  
+    margin: 14px;
+    border:var(--white) solid 2px;
+  }
+  .mock-padding {
+      margin:14px;
+  }
