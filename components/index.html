@@ -14,29 +14,29 @@
     <body>
         
         <aside class="index">
-            <h1>Typography</h1> 
+            <h4>Typography</h4> 
             <a href="#text">Text</a>
             <a href="#headers">Headers</a>
             <a href="#links">links</a>
             
 
-            <h1>Sections</h1>
+            <h4>Sections</h4>
             <a href="#navigation">Navigation Bar</a>
             <a href="#bodycard">Body / Card</a>
             <a href="#footer">Footer</a>
 
-            <h1>Visual Assets</h1>
+            <h4>Visual Assets</h4>
             <a href="#image">Image</a>
             <a href="#assets">Assets</a>
         </aside>
 
         <div class="content">
 
-        <h1> Web Components</h1>
-        <h2> Tyopgraphy Defaults</h2>
+        
+        <h1> Web Components & Tyopgraphy Defaults</h1>
         
         <article class="component">
-            <h1 class="component__name" id="text">Text Body</h1>
+            <h4 class="component__name" id="text">Primary Text Body</h4>
             <div class="component__img">
                 <img 
                 srcset="img/body/article__blurb.png 2x" 
@@ -48,19 +48,18 @@
             </div>
         </article>
         <article class="component">
-            <h1 class="component__name" id="headers">Headers (h1, h2, etc)</h1>
-            
-            <div class="component__img">
-                <img 
-                srcset="img/body/article__link.png 2x" 
-                src="img/body/article__link.png" 
-                alt="h1 h2 complete">
+            <h4 class="component__name" id="headers">Headers (h1, h2, etc)</h4>
+
+            <h5 class="commponant__tag"> H1 </h5>
 
             <div class="component__img">
                 <img 
                 srcset="img/type/h1.png 2x" 
                 src="img/type/h1.png" 
                 alt="H1 sample">
+            </div>
+
+            <h5 class="commponant__tag"> H2 </h5>
 
             <div class="component__img">
                 <img 
@@ -69,11 +68,21 @@
                 alt="H2 sample">
             </div>
 
+            <h5 class="commponant__tag"> H3 </h5>
+
             <div class="component__img">
                 <img 
                 srcset="img/type/h3.png 2x" 
                 src="img/type/h3.png" 
                 alt="H3 sample">
+            </div>
+
+            <h5 class="commponant__tag"> Header Molocule</h5>
+            <div class="component__img">
+                <img 
+                srcset="img/body/article__link.png 2x" 
+                src="img/body/article__link.png" 
+                alt="h1 h2 complete">
             </div>
 
             <div class="component__code">
@@ -82,14 +91,17 @@
                 <h3>current issue</h3>
             </div>
         </article>
+
         <article class="component">
-            <h1 class="component__name" id="links">Links</h1>
+            <h4 class="component__name" id="links">Links</h4>
+            <h5 class="commponant__tag"> Active Link Molocule </h5>
             <div class="component__img">
                 <img 
                 srcset="img/body/article--active.png 2x" 
                 src="img/body/article--active.png" 
                 alt="active link">
             </div>
+            <h5 class="commponant__tag">Link Hover</h5>
             <div class="component__code">
                 <div class="mock-card">
                     <div class="mock-padding">
@@ -101,19 +113,60 @@
         </article>
 
         <article class="component">
-            <h1 class="component__name" id="navigation">Nav Bar</h1>
+            <h4 class="component__name" id="navigation">Nav Bar</h4>
+
+            <h5 class="commponant__tag"> Nav Icons </h5>
+            <div class="component__img">
+                <img 
+                srcset="img/navigation/atom-navbar__popout.png 2x" 
+                src="img/navigation/atom-navbar__popout.png" 
+                alt="internal index pop out">
+            </div>
+            
+            <h5 class="commponant__tag"> Home Return - appears once nav bar is passed </h5>
+            <div class="component__img">
+                <img 
+                srcset="img/navigation/atom-home__button.png 2x" 
+                src="img/navigation/atom-home__button.png" 
+                alt="Home Button">
+            </div>
+            <div class="component__code">
+                <div class="nav-sample">
+                <a class="white" ref="#">Cabinet</a>
+                </div>
+            </div>
+
+
+            <h5 class="commponant__tag"> Internal Navigation Molocule </h5>
             <div class="component__img">
                 <img 
                 srcset="img/navigation/organism-internal-nav.png 2x" 
                 src="img/navigation/organism-internal-nav.png" 
                 alt="internal navigation bar">
             </div>
+
+            <h5 class="commponant__tag"> Content Link </h5>
+            <div class="component__img">
+                <img 
+                srcset="img/navigation/atom-mag.png 2x" 
+                src="img/navigation/atom-mag.png" 
+                alt="Content Link Sample">
+            </div>
+            <div class="component__code">
+                <div class="nav-sample">
+                    <a href="#">Magazine</a>
+                </div>
+            </div>
+
+            <h5 class="commponant__tag"> Content Link Molocule </h5>
             <div class="component__img">
                 <img 
                 srcset="img/navigation/organism_navbar__link-sections.png 2x" 
                 src="img/navigation/organism_navbar__link-sections.png" 
                 alt="internal navigation bar">
             </div>
+
+            <h5 class="commponant__tag"> Full Navigation Bar</h5>
             <div class="component__img">
                 <img 
                 srcset="img/navigation/organism-navbar.png 2x" 
@@ -124,7 +177,10 @@
             <div class="component__code">
                 <nav class="wrapper">
                     <ul class="wrapper internal">
-                        <li class="wrapper internal__link"><a href="#">Index</a></li>
+                    <img 
+                    srcset="img/navigation/atom-navbar__popout.png 2x" 
+                    src="img/navigation/atom-navbar__popout.png" 
+                    alt="internal index pop out">
                         <li class="wrapper internal__link"><a href="#">Cabinet</a></li>
                     </ul>
                     
@@ -139,14 +195,32 @@
                     
                     <ul class="wrapper login">
                         <li class="wrapper login__link"><a href="#">Log In</a></li>
-                        <li class="wrapper login__link"><a href="#">Search</a></li>
+                        <img 
+                        srcset="img/navigation/atom-navbar__link__search.png 2x" 
+                        src="img/navigation/atom-navbar__link__search.png" 
+                        alt="Search">
                     </ul>
                 </nav>
             </div>
         </article>
 
         <article class="component">
-            <h1 class="component__name" id="footer">Footer</h1>
+            <h4 class="component__name" id="footer">Footer</h4>
+
+            <h5 class="commponant__tag"> Footer Link </h5>
+            <div class="component__img">
+                <img 
+                srcset="img/footer/atom-footer__intagram.png 2x" 
+                src="img/footer/atom-footer__intagram.png" 
+                alt="footer Link Sample">
+            </div>
+            <div class="component__code">
+                <div class="nav-sample">
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+
+            <h5 class="commponant__tag">Full Footer</h5>
             <div class="component__img">
                 <img 
                 srcset="img/footer/Footer.png 2x" 
@@ -169,25 +243,62 @@
         </article>
 
         <article class="component">
-            <h1 class="component__name" id="image">Image</h1>
+            <h4 class="component__name" id="image">Image</h4>
+            
+            <h5 class="commponant__tag"> Hero Image </h5>
             <div class="component__img">
                 <img 
-                srcset="img/body/image/article-image.png 2x" 
-                src="img/body/image/article-image.png" 
-                alt="Article Image">
+                srcset="img/body/image/atom-image__hero.png 2x" 
+                src="img/body/image/atom-image__hero.png" 
+                alt="Hero Image">
             </div>
-            
+
+            <div class="component__code">
+                <section class="image">
+                    <img 
+                    srcset="img/body/image/atom-image__hero.png 2x" 
+                    src="img/body/image/atom-image__hero.png" 
+                    alt="Hero Image">
+                </section>
+            </div>
+
+            <h5 class="commponant__tag"> Article Thumb </h5>
+            <div class="component__img">
+                <img 
+                srcset="img/body/image/atom-image__article.png 2x" 
+                src="img/body/image/atom-image__article.png" 
+                alt="Article Thumnail">
+            </div>
+
+            <div class="component__code">
+                <section class="image">
+                    <img 
+                    srcset="img/body/image/atom-image__article.png 2x" 
+                    src="img/body/image/atom-image__article.png" 
+                    alt="Article Thumnail">
+                </section>
+            </div>
+
+            <h5 class="commponant__tag"> Issue Thumb </h5>
+            <div class="component__img">
+                <img 
+                srcset="img/body/image/atom-image__current.png 2x" 
+                src="img/body/image/atom-image__current.png" 
+                alt="Issue Image">
+            </div>
+
             <div class="component__code">
                 <section class="image">
                     <img class="article-thumb"
-                    src="img/body/image/article-image.png"
+                    srcset="img/body/image/atom-image__current.png 2x"
+                    src="img/body/image/atom-image__current.png"
                     alt="article thumbnail">
                 </section>
             </div>
         </article>
 
         <article class="component">
-            <h1 class="component__name" id="assets">Assets</h1>
+            <h4 class="component__name" id="assets">Assets</h4>
             <div class="component__img">
                 <img 
                 srcset="img/body/assets/logo.png 2x" 

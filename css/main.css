@@ -1,4 +1,3 @@
-
 :root{
     --font-sans-serif: arimo, sans-serif;
     --font-serif: palatino, serif;
@@ -16,7 +15,7 @@ html {
     box-sizing: inherit;
   }
 
-/** Aside **/
+/** Aside and Componant layout**/
 .index {
     width: 20%;
     height: auto;
@@ -35,13 +34,48 @@ html {
     font-size: .75em;
     letter-spacing: 1px;
 }
-.index h1{
+h4 {
     font-family: var(--font-sans-serif);
     font-weight: 700;
     letter-spacing: 3px;
     padding-top: 1em;
+    margin: 0;
 }
 
+h5 {
+    font-family: var(--font-serif);
+    font-size: .75em;
+    letter-spacing: 1px;
+     margin: 0 0 0 0;
+}
+
+.component img {
+    max-width: initial;
+}
+
+.component__img{
+    overflow-x: auto;
+    border: var(--yellow) solid 1px;
+    margin: 0em 0em 1em 0em; 
+}
+
+.component {
+    border: var(--orange) solid 1px;
+    margin: .5em 0em;
+    padding: .5em .5em .5em 1em;
+}
+
+.nav-sample {
+    font-family: var(--font-sans-serif);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-bottom: .58em;
+    letter-spacing: 1px;
+}
+
+.nav-sample .white{
+    color: var(--white);
+}
 
 /** typography **/
 
@@ -126,6 +160,7 @@ nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    white-space: nowrap;
 }
 
 /** Header Internal**/
@@ -159,7 +194,8 @@ nav ul{
     font-family: var(--font-sans-serif);
     font-size: 1.25rem;
     line-height: 2rem;
-    margin: 0 3rem;
+    margin: 0rem 0rem;
+    
     border-top: var(--white) solid 2px;
     letter-spacing: 1px;
 }
@@ -168,6 +204,7 @@ nav ul{
     list-style-type: none;
     display: flex;
     justify-content: center;
+    white-space: nowrap;
 }
 
 .foot li{ 
@@ -179,17 +216,6 @@ nav ul{
 .foot li:last-of-type {
     border-right: none;
 }
-/** componant **/
-
-.component img {
-      max-width: initial;
-  }
-
-.component__img{
-      overflow-x: auto;
-      border: var(--yellow) solid 1px;
-      margin: 1em 0em;
-  }
 
   /** Card Mock-up **/
   .mock-card {
