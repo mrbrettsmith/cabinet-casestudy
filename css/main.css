@@ -22,7 +22,7 @@ html {
     float: left;
     background-color: var(--yellow);
     position: fixed;
-    padding: 1em;
+    padding: 1.5em;
 }
 .content {
     width:80%;
@@ -38,7 +38,7 @@ h4 {
     font-family: var(--font-sans-serif);
     font-weight: 700;
     letter-spacing: 3px;
-    padding-top: 1em;
+    
     margin: 0;
 }
 
@@ -62,7 +62,7 @@ h5 {
 .component {
     border: var(--orange) solid 1px;
     margin: .5em 0em;
-    padding: .5em .5em .5em 1em;
+    padding: 1.5em;
 }
 
 .nav-sample {
@@ -128,12 +128,6 @@ img {
       display: block;
   }
 
-.transparent  {
-    scale: 50%;
-    margin: 0;
-    padding: 0;
-}
-
 /** Header **/
 nav{ 
     font-family: var(--font-sans-serif);
@@ -189,13 +183,18 @@ nav ul{
     margin:0;
 }
 
+/** Assets & animation **/
+.return {
+float: right;
+}
+
+
 /** Footer **/
 .foot { 
     font-family: var(--font-sans-serif);
     font-size: 1.25rem;
     line-height: 2rem;
     margin: 0rem 0rem;
-    
     border-top: var(--white) solid 2px;
     letter-spacing: 1px;
 }
