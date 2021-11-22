@@ -185,9 +185,24 @@ nav ul{
 
 /** Assets & animation **/
 .return {
-float: right;
+    float: right;
 }
 
+
+.icon {
+    position:relative;
+    display: inline-block;
+}
+.icon .image--orange{
+    position:absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index:99;
+}
+.icon:hover .image--orange{
+    display: inline;
+}
 
 /** Footer **/
 .foot { 
@@ -219,9 +234,17 @@ float: right;
   /** Card Mock-up **/
   .mock-card {
     display: block;  
-    margin: 14px;
+    
     border:var(--white) solid 2px;
   }
   .mock-padding {
-      margin:14px;
+    margin:1.5em;
+  }
+
+  .card-article{
+    border: 2px solid var(--white);
+  }
+
+  .padding{
+      padding: 1.5em;
   }
