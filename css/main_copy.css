@@ -1,0 +1,256 @@
+:root{
+    --font-sans-serif: arimo, sans-serif;
+    --font-serif: palatino, serif;
+    --white: #ffffff;
+    --grey: #d1d1d1;
+    --yellow: #fff713;
+    --orange: #f26d21;
+    --black: #000000;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/** Aside and Componant layout**/
+.index {
+    width: 20%;
+    height: auto;
+    float: left;
+    background-color: var(--yellow);
+    position: fixed;
+    padding: 1.5em;
+}
+.content {
+    width:80%;
+    float: right;
+    padding: 1em;
+}
+.index a{
+    display: block;
+    font-size: .75em;
+    letter-spacing: 1px;
+}
+h4 {
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
+    letter-spacing: 3px;
+    
+    margin: 0;
+}
+
+h5 {
+    font-family: var(--font-serif);
+    font-size: .75em;
+    letter-spacing: 1px;
+     margin: 0 0 0 0;
+}
+
+.component img {
+    max-width: initial;
+}
+
+.component__img{
+    overflow-x: auto;
+    border: var(--yellow) solid 1px;
+    margin: 0em 0em 1em 0em; 
+}
+
+.component {
+    border: var(--orange) solid 1px;
+    margin: .5em 0em;
+    padding: 1.5em;
+}
+
+.nav-sample {
+    font-family: var(--font-sans-serif);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-bottom: .58em;
+    letter-spacing: 1px;
+}
+
+.nav-sample .white{
+    color: var(--white);
+}
+
+/** typography **/
+
+h1,h2{
+    font-family: var(--font-serif);
+    font-weight: 575;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    line-height: 2em;
+    margin: 0;
+}
+
+h3{
+    font-family: var(--font-sans-serif);
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+h1,h3{
+    text-transform: uppercase;
+}
+
+a{
+    cursor: pointer;
+}
+a:link {
+    text-decoration: none;
+    color:initial;
+}
+a:visited {
+    color:var(--black);
+}
+a:hover {
+    color:var(--orange);
+}
+
+body{
+    font-family: var(--font-serif);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    max-width: 1236px;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding-bottom: .58em;
+    background-color: var(--grey);
+  }
+
+/** Image **/
+img {
+      max-width: 100%;
+      display: block;
+  }
+
+/** Header **/
+nav{ 
+    font-family: var(--font-sans-serif);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    height: 3.9rem;
+    /** width: 100%; **/
+    position: fixed;
+    padding-bottom: .58em;
+    border-bottom: var(--white) solid 2px;
+    letter-spacing: 1px;
+}
+
+.wrapper {
+display: flex;
+justify-content: space-between;
+}
+.wrapper a{
+    color: var(--white);
+}
+
+.wrapper a:hover{
+    color: var(--orange);
+}
+
+nav ul{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+/** Header Internal**/
+.internal li{
+    margin-right: 14px;
+}
+.internal li:last-of-type {
+    margin:0;
+}
+
+/** Header link**/
+.link a{
+    color: var(--black);
+}
+.link li{
+    margin-right: 14px;
+}
+.link li:last-of-type {
+    margin:0;
+}
+/** Header login **/
+.login li{
+    margin-left: 14px;
+}
+.login li:first-of-type {
+    margin:0;
+}
+
+/** Assets & animation **/
+.return {
+    float: right;
+}
+
+
+.icon {
+    position:relative;
+    display: inline-block;
+}
+.icon .image--orange{
+    position:absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index:99;
+}
+.icon:hover .image--orange{
+    display: inline;
+}
+
+/** Footer **/
+.foot { 
+    font-family: var(--font-sans-serif);
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin: 0rem 0rem;
+    border-top: var(--white) solid 2px;
+    letter-spacing: 1px;
+}
+
+.foot ul { 
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.foot li{ 
+    padding: 0 16px;
+    
+    border-right: var(--white) solid 2px;
+}
+
+.foot li:last-of-type {
+    border-right: none;
+}
+
+  /** Card Mock-up **/
+  .mock-card {
+    display: block;  
+    
+    border:var(--white) solid 2px;
+  }
+  .mock-padding {
+    margin:1.5em;
+  }
+
+  .card-article{
+    border: 2px solid var(--white);
+  }
+
+  .padding{
+      padding: 1.5em;
+  }
