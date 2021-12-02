@@ -132,14 +132,14 @@ img {
   }
 
 /** Header **/
+
 nav{ 
     font-family: var(--font-sans-serif);
     font-size: 1.2rem;
     line-height: 2rem;
     height: 3.9rem;
-    /** width: 100%; **/
-    position: fixed;
-    padding-bottom: .58em;
+    width: 100%;
+    /** position: fixed; **/
     border-bottom: var(--white) solid 2px;
     letter-spacing: 1px;
 }
@@ -147,6 +147,8 @@ nav{
 .wrapper {
 display: flex;
 justify-content: space-between;
+align-items: center;
+overflow:hidden;
 }
 .wrapper a{
     color: var(--white);
@@ -164,10 +166,10 @@ nav ul{
 }
 
 /** Header Internal**/
-.internal li{
+.internal img{
     margin-right: 14px;
 }
-.internal li:last-of-type {
+.internal a {
     margin:0;
 }
 
@@ -182,11 +184,11 @@ nav ul{
     margin:0;
 }
 /** Header login **/
-.login li{
+.login img{
     margin-left: 14px;
 }
-.login li:first-of-type {
-    margin:0;
+.login a{
+    margin:0px;
 }
 
 /** Assets & animation **/
