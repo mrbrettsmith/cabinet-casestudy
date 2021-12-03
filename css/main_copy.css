@@ -13,7 +13,7 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
-  }
+  } 
 
 /** Aside and Componant layout
 .index {
@@ -78,6 +78,22 @@ h5 {
 }
 **/
 
+/** Screen Size and Column **/
+
+
+.main{
+display: block;
+}
+
+.card {
+    box-sizing: content-box;
+    float:left;
+    margin-bottom: 1.5rem;
+}
+
+[data-col="1"] {width: 33.33%;}
+[data-col="2"] {width: 100%;}
+
 /** typography **/
 
 h1,h2{
@@ -126,6 +142,9 @@ body{
     background-color: var(--grey);
   }
 
+  P {
+    margin: 0px;
+  }
 /** Image **/
 img {
       max-width: 100%;
@@ -213,6 +232,10 @@ nav ul{
 .icon:hover .image--orange{
     display: inline;
 }
+.logo {
+    margin-bottom: 1.5rem;
+    width: 16.25rem;
+}
 
 /** Footer **/
 .foot { 
@@ -252,6 +275,10 @@ nav ul{
   }
 
   .card-article{
+    border: 2px solid var(--white);
+  }
+
+  .border {
     border: 2px solid var(--white);
   }
 
