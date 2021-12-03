@@ -15,7 +15,7 @@ html {
     box-sizing: inherit;
   }
 
-/** Aside and Componant layout**/
+/** Aside and Componant layout
 .index {
     width: 20%;
     height: auto;
@@ -76,6 +76,7 @@ h5 {
 .nav-sample .white{
     color: var(--white);
 }
+**/
 
 /** typography **/
 
@@ -142,6 +143,7 @@ nav{
     /** position: fixed; **/
     border-bottom: var(--white) solid 2px;
     letter-spacing: 1px;
+    align-items: center;
 }
 
 .wrapper {
