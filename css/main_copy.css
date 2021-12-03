@@ -82,17 +82,16 @@ h5 {
 
 
 .main{
-display: block;
+display: flex;
 }
 
 .card {
-    box-sizing: content-box;
     float:left;
     margin-bottom: 1.5rem;
 }
-
+/** Columns causing problems 
 [data-col="1"] {width: 33.33%;}
-[data-col="2"] {width: 100%;}
+[data-col="2"] {width: 100%;}**/
 
 /** typography **/
 
@@ -166,10 +165,10 @@ nav{
 }
 
 .wrapper {
-display: flex;
-justify-content: space-between;
-align-items: center;
-overflow:hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow:hidden;
 }
 .wrapper a{
     color: var(--white);
