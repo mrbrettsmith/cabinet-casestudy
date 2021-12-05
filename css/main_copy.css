@@ -87,6 +87,7 @@ body{
     margin-right: 1.5rem;
     font-size: 1.25rem;
     padding-bottom: .58em;
+    margin-top: 0;
     background-color: var(--grey);
   }
 
@@ -135,6 +136,10 @@ body{
 .center {
     text-align: center;
     margin-top: 1.5rem;
+}
+.current img {
+    height: 16.25rem;
+    width: auto;
 }
 
 /** Screen Size and Column **/
@@ -240,6 +245,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     overflow:hidden;
+    height: 3.9rem;
 }
 .wrapper a{
     color: var(--white);
@@ -255,6 +261,8 @@ nav ul{
 }
 /** Header Internal**/
 .internal img{
+    width: 1.25rem;
+    height: auto;
     margin-right: 14px;
 }
 .internal a {
@@ -272,6 +280,8 @@ nav ul{
 }
 /** Header login **/
 .login img{
+    width: 1.25rem;
+    height: auto;
     margin-left: 14px;
 }
 .login a{
