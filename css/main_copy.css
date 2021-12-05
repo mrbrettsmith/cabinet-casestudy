@@ -4,6 +4,7 @@
     --white: #ffffff;
     --grey: #d1d1d1;
     --yellow: #fff713;
+    --newsyellow: #FFF7A3; 
     --orange: #f26d21;
     --black: #000000;
 }
@@ -84,9 +85,42 @@ h5 {
 .card {
     margin-bottom: 1.5rem;
 }
-.padding{
-    padding: 1.5em;
+.padding {
+    padding: 1.5rem;
 }
+
+/** Current **/
+
+
+.logo {
+    margin-bottom: 1.5rem;
+    width: 16.25rem;
+}
+
+.news {
+    background-color: var(--newsyellow);
+    border: 2px solid var(--newsyellow);
+    font-family: var(--font-sans-serif);
+    margin-top: 1.5rem;
+}
+
+.news a {
+    border-bottom: 2px black solid;
+    line-height: .5em;
+}
+
+.news a:hover {
+    border-bottom: 2px var(--orange) solid;
+}
+
+.news .center a h3 {
+    margin-top: 1.5rem;}
+
+.center {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
 
 /** Screen Size and Column **/
 
@@ -109,6 +143,7 @@ h5 {
 .article{
     border: 2px solid var(--white);
   }
+
 /** typography **/
 h1,h2{
     font-family: var(--font-serif);
@@ -129,7 +164,7 @@ h1,h3{
     text-transform: uppercase;
 }
 
-
+/** Links **/
 a{
     cursor: pointer;
 }
@@ -143,6 +178,8 @@ a:visited {
 a:hover {
     color:var(--orange);
 }
+
+
 
 body{
     font-family: var(--font-serif);
@@ -163,6 +200,11 @@ img {
       max-width: 100%;
       display: block;
   }
+.current img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /** Header **/
 
@@ -240,10 +282,6 @@ nav ul{
 }
 .icon:hover .image--orange{
     display: inline;
-}
-.logo {
-    margin-bottom: 1.5rem;
-    width: 16.25rem;
 }
 
 /** Footer **/
