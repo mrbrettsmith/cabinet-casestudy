@@ -78,23 +78,38 @@ h5 {
 }
 **/
 
-/** Screen Size and Column **/
 
-
-.main{
-display: flex;
-}
+/** Article Card **/
 
 .card {
-    float:left;
     margin-bottom: 1.5rem;
 }
-/** Columns causing problems 
-[data-col="1"] {width: 33.33%;}
-[data-col="2"] {width: 100%;}**/
+.padding{
+    padding: 1.5em;
+}
 
+/** Screen Size and Column **/
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    [data-col="1"] {flex: 0 0 33.33%;}
+    [data-col="2"] {flex: 0 0 66.66%;}
+    
+.left_col{
+    margin-left:0;
+}
+
+.mid_col{
+    padding-left: 1.5rem;
+}
+
+.article{
+    border: 2px solid var(--white);
+  }
 /** typography **/
-
 h1,h2{
     font-family: var(--font-serif);
     font-weight: 575;
@@ -103,7 +118,6 @@ h1,h2{
     line-height: 2em;
     margin: 0;
 }
-
 h3{
     font-family: var(--font-sans-serif);
     font-size: .9rem;
@@ -111,10 +125,10 @@ h3{
     letter-spacing: 1px;
     margin: 0;
 }
-
 h1,h3{
     text-transform: uppercase;
 }
+
 
 a{
     cursor: pointer;
@@ -163,7 +177,6 @@ nav{
     letter-spacing: 1px;
     align-items: center;
 }
-
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -173,11 +186,9 @@ nav{
 .wrapper a{
     color: var(--white);
 }
-
 .wrapper a:hover{
     color: var(--orange);
 }
-
 nav ul{ 
     list-style-type: none;
     margin: 0;
@@ -215,7 +226,6 @@ nav ul{
 .return {
     float: right;
 }
-
 
 .icon {
     position:relative;
@@ -273,14 +283,9 @@ nav ul{
     margin:1.5em;
   }
 
-  .card-article{
-    border: 2px solid var(--white);
-  }
+
 
   .border {
     border: 2px solid var(--white);
   }
 
-  .padding{
-      padding: 1.5em;
-  }
