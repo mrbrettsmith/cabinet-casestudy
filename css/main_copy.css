@@ -167,6 +167,21 @@ body{
     padding-left: 1.5rem;
 }
 
+.advert {
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    font-family: var(--font-sans-serif);
+    margin-bottom: 1.5rem;
+}
+.advert a {
+    line-height: .5em;
+}
+.advert .center a h3 {
+    margin-top: 1.5rem;}
+
+.advert img{
+    margin-bottom: 1.5rem;}
+
 /** typography **/
 h1,h2{
     font-family: var(--font-serif);
