@@ -86,8 +86,9 @@ body{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.25rem;
-    padding-bottom: .58em;
+    padding-bottom: 0;
     margin-top: 0;
+    margin-bottom: 0;
     background-color: var(--grey);
   }
 
@@ -290,8 +291,29 @@ nav ul{
 
 /** Assets & animation **/
 .return {
-    float: right;
+    display: block;
+    bottom: 24px;
 }
+
+.wrap{
+    position: relative;
+    right: 1.5rem;
+    bottom: 6rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    z-index:10;
+}
+
+.wrap .icon{
+    position: fixed;
+    right: 1.5rem;
+    bottom: 2rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    z-index:10;
+}
+
+
 
 .icon {
     position:relative;
@@ -313,7 +335,7 @@ nav ul{
     font-family: var(--font-sans-serif);
     font-size: 1.25rem;
     line-height: 2rem;
-    margin: 0rem 0rem;
+    margin: 2.5rem 0rem 2.5rem 0rem;
     border-top: var(--white) solid 2px;
     letter-spacing: 1px;
 }
