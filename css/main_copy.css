@@ -145,10 +145,7 @@ body{
 
 /** Screen Size and Column **/
 
-.overall{
-    position: relative;
-    z-index: -1;
-}
+
 
 .main {
     max-width: 1236px;
