@@ -145,6 +145,11 @@ body{
 
 /** Screen Size and Column **/
 
+.overall{
+    position: relative;
+    z-index: -1;
+}
+
 .main {
     max-width: 1236px;
     display: flex;
@@ -291,30 +296,16 @@ nav ul{
 
 /** Assets & animation **/
 .return {
-    display: block;
+    position: sticky;
     bottom: 24px;
+    float: right;
 }
 
 .wrap{
-    position: relative;
-    right: 1.5rem;
-    bottom: 6rem;
     width: 2.25rem;
     height: 2.25rem;
     z-index:10;
 }
-
-.wrap .icon{
-    position: fixed;
-    right: 1.5rem;
-    bottom: 2rem;
-    width: 2.25rem;
-    height: 2.25rem;
-    z-index:10;
-}
-
-
-
 .icon {
     position:relative;
     display: inline-block;
@@ -360,15 +351,11 @@ nav ul{
   /** Card Mock-up **/
   .mock-card {
     display: block;  
-    
     border:var(--white) solid 2px;
   }
   .mock-padding {
     margin:1.5em;
   }
-
-
-
   .border {
     border: 2px solid var(--white);
   }
